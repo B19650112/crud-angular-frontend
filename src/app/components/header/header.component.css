@@ -1,0 +1,14 @@
+.info-color {
+    background-color: #198cb8 !important;
+}
+.fa {
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color:#00688B;
+}
+.fa:hover {
+    color: rgb(114, 206, 236);
+}

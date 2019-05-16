@@ -1,0 +1,46 @@
+<header>
+  <nav class=" mb-1 navbar navbar-expand-lg navbar-dark info-color">
+    <ul class="navbar-nav mr-auto">
+      <div class="btn-group" mdbDropdown style="color:white">
+        <button mdbDropdownToggle mdbBtn type="button" btn btn-info style="font-weight: bold" size="md" mdbWavesEffect
+          class="dropdown-toggle" mdbWavesEffect>
+          Entry CRUD
+        </button>
+        <div class="dropdown-menu dropdown-primary">
+          <a class="dropdown-item" style="color:#448bc0" [routerLink]="['/tabelproduct/listproduct']">- Entry Tabel
+            Product</a>
+          <a class="dropdown-item" style="color:#448bc0" [routerLink]="['/tabelproduct/printproduct']">- Print Tabel
+            Product</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item" style="color:#448bc0;" [routerLink]="['/tabelproduct/noname']">- XXXXXXXXXXXXXXX</a>
+          <a class="dropdown-item" style="color:#448bc0" href="#">- XXXXXXXXXXXXXXX</a>
+        </div>
+      </div>
+      <div class="btn-group" mdbDropdown style="color:white">
+        <button mdbDropdownToggle mdbBtn type="button" btn btn-info style="font-weight: bold" size="md" mdbWavesEffect
+          class="dropdown-toggle" mdbWavesEffect>
+          Menu 02
+        </button>
+      </div>
+      <div class="btn-group" mdbDropdown style="color:white">
+        <button mdbDropdownToggle mdbBtn type="button" btn btn-info style="font-weight: bold" size="md" mdbWavesEffect
+          class="dropdown-toggle" mdbWavesEffect>
+          Menu 03
+        </button>
+      </div>
+      <div class="btn-group" mdbDropdown style="color:white">
+        <button mdbDropdownToggle mdbBtn type="button" btn btn-info style="font-weight: bold" size="md" mdbWavesEffect
+          class="dropdown-toggle" mdbWavesEffect>
+          Menu 04
+        </button>
+      </div>
+    </ul>
+    <div class="font-weight-normal" style="margin-top:14px">
+      <p class="text-light"><a style="color: #60c9f0;font-size:15px">&nbsp;username: &nbsp;{{userlogin}}</a></p>
+    </div>
+    <button type="button" class="btn btn-outline-info" size="sm" (click)="fungsi()" data-title="Logout"
+      style="font-weight:bold;">
+      <i class="fa fa-external-link" style="font-size:18px;font-weight:bold;margin-top:-2px"></i>
+    </button>
+  </nav>
+</header>

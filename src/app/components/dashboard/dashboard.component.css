@@ -1,0 +1,57 @@
+.color_title {
+    color: #7FFF00;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.color_desc {
+    color: #fff;
+    margin-top: 10px;
+}
+.view-first img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+ }
+ .view-first .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background-color: rgba(0,128,128, 0.4);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+ }
+ .view-first:hover img {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+ }
+ .view-first:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+
+ [data-title]:hover:after {
+   visibility: visible;
+   color:#FFA726;
+}
+[data-title]:after {
+   content: attr(data-title);
+   position: absolute;
+   bottom: 0.1em;
+   margin-left: -15px;
+   width: 160px;
+   padding: 4px 4px 4px 8px;
+   color: #FFFFFF;
+   visibility: hidden;
+}
+[data-title] {
+   position: relative;
+}

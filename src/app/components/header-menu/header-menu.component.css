@@ -1,0 +1,28 @@
+.btn-outline-info {
+    border: 1px solid #33b5e5 !important;
+    background-color: transparent !important;
+    color: #33b5e5 !important;
+    height: 35px;
+}
+button:hover {
+    color:#00FA9A;
+}
+.info-color {
+    background-color: #198cb8 !important;
+}
+[data-title]:hover:after {
+    visibility: visible;
+    color:#FFEA00;
+}
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 0.2em;
+    left: 14%;
+    padding: 4px 4px 4px 8px;
+    color: #FFFFFF;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}

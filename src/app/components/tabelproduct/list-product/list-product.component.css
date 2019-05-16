@@ -1,0 +1,90 @@
+button:hover {
+    color:#76FF03;
+}
+.btnhov:hover {
+    color:rgb(160, 7, 27);
+}
+/* for font message */
+.fontmsg {
+  font-size: 14px;
+  font-family: Comic Sans MS, Helvetica, sans-serif;
+}
+/* start For edit position pagination, color, background color */
+.my-pagination /deep/ .ngx-pagination{
+  text-align: center; 
+}
+.my-pagination /deep/ .ngx-pagination .current{
+  background: #4285f4;
+  font-size: 13px;
+}
+.my-pagination /deep/ .ngx-pagination .disabled {
+  font-size: 14px;
+  color: #90CAF9;
+}
+.my-pagination /deep/ .ngx-pagination a {
+  color: #4285f4;
+  font-size: 14px;
+}
+/* end For edit position pagination, color, background color */
+
+/* start for hold header table, auto width columns */
+.tableFixHead {
+    overflow-y: auto;
+    height: 211px;
+}
+.tableFixHead table {
+    border-collapse: collapse;
+    width: 100%;
+} 
+.tableFixHead th,
+.tableFixHead td {
+    padding: 8px 16px;
+} 
+.tableFixHead th {
+    position: sticky;
+    top: 0;
+    background: #eee;
+}
+td.fitwidth {  /*auto width column*/
+  width: 1px;
+  white-space: nowrap;
+}
+/* end for hold header table, auto width columns */
+
+/* for color placeholder */
+::-webkit-input-placeholder { /*Chrome, Opera, and Safari*/
+    color: #BDBDBD;
+    font-size: 14px;
+    font-family: 'myFont', Comic Sans MS, Helvetica, sans-serif;
+  }
+  :-moz-placeholder { /*Firefox 18-*/
+    color: #BDBDBD;
+    font-size: 14px;
+    font-family: 'myFont', Comic Sans MS, Helvetica, sans-serif;
+  }
+  ::-moz-placeholder { /*Firefox 19+*/
+    color: #BDBDBD;
+    font-size: 15px;
+    font-family: 'myFont', Comic Sans MS, Helvetica, sans-serif;
+  }
+  :-ms-input-placeholder { /*Microsoft Edge*/
+    color: #BDBDBD;
+    font-size: 14px;
+    font-family: 'myFont', Comic Sans MS, Helvetica, sans-serif;
+  }
+/* for color placeholder rtl */
+  input::-webkit-input-placeholder { /*Chrome, Opera, and Safari*/
+    text-align: left;
+  }
+  input:-moz-placeholder { /*Mozilla Firefox 4 to 18*/
+    text-align: left;
+  }
+  input::-moz-placeholder { /*Mozilla Firefox 19+ but I'm not sure about working*/
+    text-align: left;
+  }
+  input:-ms-input-placeholder { /*Internet Explorer 10*/
+    text-align: left;
+  }
+  input::placeholder {
+    text-align: left;
+  }

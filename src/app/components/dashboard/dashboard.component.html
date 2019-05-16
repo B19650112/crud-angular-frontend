@@ -1,0 +1,94 @@
+<div style="margin:5px;">
+  <div class="row">
+    <div class="col-md-2 mb-1">
+      <div class="card mdb-color text-center z-depth-2">
+        <div class="view view-first">
+          <img src="assets/image/mletek1.jpg" class="card-img-top" alt="photo">
+          <div class="mask">
+            <div class="color_title">
+              <a (click)="onShowImage1()" data-title="click to enlarge">
+                <h4 style="font-weight:bold">Kue Ketawa</h4>
+              </a>
+            </div>
+            <div class="color_desc">
+              <a style="text-align:center;cursor:default;">Kue Ketawa, Enak rasanya.
+                Harga Rp. 40,000/½ kg. Hubungi Nomor: 081384160845 - Ibu Ragil</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h4 class="card-title orange-text">Java Snack</h4>
+        </div>
+      </div>
+    </div>  
+    <div class="col-md-8 mb-1">
+      <div class="card-body">
+        <h1 class="card-title text-default" style="text-shadow: 2px 2px #198cb8;text-align:center">Learning crud
+          frontend with Angular
+          <br/><h3 style="text-shadow:none;text-align:center;color:#198cb8">Veni, vidi, vici</h3>
+          <img src="assets/image/logo.png" style="width:128px;height:128px;" alt="photo">
+        </h1>
+      </div>
+    </div>
+    <div class="col-md-2 mb-1">
+      <div class="card mdb-color text-center z-depth-2">
+        <div class="view view-first">
+          <img src="assets/image/tapeuli.jpg" class="card-img-top" alt="photo">
+          <div class="mask">
+            <div class="color_title">
+              <a (click)="onShowImage2()" data-title="click to enlarge">
+                <h4 style="font-weight:bold">Tape Uli</h4>
+              </a>
+            </div>
+            <div class="color_desc">
+              <a style="text-align:center;cursor:default;">Tape Uli, Enak rasanya. 
+                Harga&nbsp;&nbsp;&nbsp;&nbsp; Rp. 95,000/1½ kg, 1 kg Uli, ½ kg tape ketan. Hubungi Nomor: 081384160845 - Ibu Ragil</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h4 class="card-title orange-text">Betawi Snack</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Form dialog show image1-->
+<div mdbModal #showImage1="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-primary modal-dialog-centered" color="teal darken-3" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead center" style="text-align: center">Makanan Khas Jawa Tengah (Java snacks)</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="showImage1.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+            <ngx-image-viewer [src]="['assets/image/mletek2.jpg']"></ngx-image-viewer>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+<!--Form dialog show image2-->
+<div mdbModal #showImage2="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-primary modal-dialog-centered" color="teal darken-3" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead center" style="text-align: center">Makanan Khas Betawi (Betawi snacks)</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="showImage2.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+            <ngx-image-viewer [src]="['assets/image/tapeuli2.jpg']">></ngx-image-viewer>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
